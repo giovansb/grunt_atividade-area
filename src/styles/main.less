@@ -1,0 +1,86 @@
+@fonteDoTitulo: "Sacramento", cursive;;
+@fontePrincipal: "Roboto", sans-serif;
+@corDeFundo: #E66EB2;
+@corPrincipal: #003B4A;
+@corSecundaria: #fff;
+
+body{
+    background-color: @corDeFundo;
+    font-family: @fontePrincipal;
+    color: @corPrincipal;
+}
+main {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+
+    h2{
+        span{
+            font-family: @fonteDoTitulo;
+            font-size: 1.2em;
+        }
+        font-size: 1.3em;
+        margin: 0;
+    }
+}
+
+h1{
+    font-family: @fonteDoTitulo;
+    background-color: @corSecundaria;
+    border-radius: 20px;
+}
+
+.form-input{
+    input{
+        padding: 8px;
+        border-radius: 20px;
+        border: none;
+        margin-left: 5px;
+        text-align: center;
+        font-size: 1em;
+        width: 20%;
+        color: @corPrincipal;
+    }
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+button{
+    background-color: @corPrincipal;
+    //padding: 16px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 2em;
+    margin: 12px auto;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: @fonteDoTitulo;
+    font-weight: bold;
+    color: @corSecundaria;
+
+    &:hover{
+        color: @corDeFundo;
+        background-color: #00181e;
+    }
+}
+
+.resultado{
+    border: 6px solid @corSecundaria;
+    padding: 20px;
+    display: none;
+
+    span{
+        font-family: @fonteDoTitulo;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    #resultado-valor{
+        color: @corSecundaria;
+    }
+}
